@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>How's the weather?</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <div class="header__column">
+            <span class="header__region"></span>
+        </div>
+        <div class="header__find header__column">
+            <input class="header__find-input display-hidden"type="text" placeholder="도시를 입력하세요">
+            <i class="fa-solid fa-magnifying-glass search-btn"></i>
+        </div>
+    </header>
+    <main class="main">
+        <div class="main-temperature__column">
+            <div class="main-temperature__wraper">
+                <img id="main-temperature__img" src="">
+            </div>
+            <span class="main-temperature__text"></span>
+        </div>
+    </main>
+    <footer>
+        <div class="footer-text">
+            <div class="footer-text__column">
+                <span>토스와 함께 미라클 모닝 도전하기</span>
+            </div>
+            <div class="footer-text__column">
+                <span>미라클 모닝 도전하기는 토스뱅크에서 다른 사람들과 아침에 정해진 시간까지 일어나 출석체크를 인증하는 서비스예요.</span>
+            </div>
+        </div>
+        <button><a href="https://www.tossbank.com/articles/tossbank-miracle-morning">나도 도전하기</a></button>
+    </footer>
+    <script src="https://kit.fontawesome.com/38c8de747b.js" crossorigin="anonymous"></script>
+    <script src="js/app.js" type="text/javascript"></script>
+    <script src="js/fetching.js" type="text/javascript"></script>
+</body>
+</html>
