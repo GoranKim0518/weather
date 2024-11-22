@@ -100,3 +100,5 @@ searchInput.addEventListener("blur", function() {
 
 window.navigator.geolocation.getCurrentPosition(success, err);
 searchInputIcon.addEventListener("click", fetchFunc);
+
+//snow 추가

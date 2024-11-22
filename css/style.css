@@ -16,6 +16,7 @@ header {
 .header__column .header__region {
     font-size: 29px;
     white-space: nowrap;
+    font-weight: 400;
 }
 
 
@@ -69,6 +70,7 @@ a {
     text-decoration: none;
     color: #fff;
     font-size: 14px;
+    font-weight: 400;
 }
 
 button {
@@ -102,11 +104,13 @@ button {
     justify-content: center;
     font-size: 33px;
     margin-bottom: 54px;
+    font-weight: 400;
 }
 
 .footer-text .footer-text__column:first-child {
-    margin-bottom: 5px;
+    margin-bottom: 7px;
     font-size: 16px;
+    font-weight: 400;
 }
 
 .footer-text .footer-text__column:last-child {
@@ -114,3 +118,5 @@ button {
     font-size: 13px;
     color: rgba(0, 0, 0, 0.8);
 }
+
+/*calc...n%-vpx로 버튼 등의 요소 위치 비율 계산해서 고정*/
