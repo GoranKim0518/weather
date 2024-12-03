@@ -1,4 +1,3 @@
-//현재 위치 기반 자동 GPS 탐색 함수
 function success(pos) {
     const lat = pos.coords.latitude;
     const lon = pos.coords.longitude;
@@ -8,6 +7,9 @@ function success(pos) {
     console.log(url);
     fetch(url)
         .then(response => response.json())
+        /*if(!response.ok) {
+                throw new Error("Fetch Error")
+        })*/
         .then(data => {
             let temperature = data.main.temp;
             const cityName = data.name;
@@ -46,7 +48,6 @@ function err() {
     console.log("Coords Error!")
 }
 
-//직접 검색 기반 GPS 탐색 함수
 async function fetchFunc() {
     const city = searchInput.value;
     const urlDup = `https://api.openweathermap.org/data/2.5/weather?q=${city}&lang=ko&units=metric&appid=a60165ce2f175fe6914e08643827b2ef`;
@@ -88,7 +89,6 @@ async function fetchFunc() {
 const searchInput = document.querySelector(".header__find-input");
 const searchInputIcon = document.querySelector(".header__find i");
 
-//이벤트 리스너
 searchInputIcon.addEventListener("click", function() {
     searchInput.classList.toggle("display-hidden");
     searchInput.focus;
